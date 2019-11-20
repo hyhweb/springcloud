@@ -6,8 +6,9 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="springbootadmin-service" />
+        <module name="gateway-service" />
         <module name="system-service" />
+        <module name="springbootadmin-service" />
         <module name="order-service" />
       </profile>
     </annotationProcessing>
@@ -17,6 +18,7 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="gateway-service" options="-parameters" />
       <module name="order-service" options="-parameters" />
       <module name="springbootadmin-service" options="-parameters" />
       <module name="system-service" options="-parameters" />

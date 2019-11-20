@@ -1,6 +1,10 @@
+server:
+  port: 8081
+
 spring:
   application:
-    name: system-service
+    name: order-service
+
   cloud:
     nacos:
       config:
@@ -19,8 +23,10 @@ spring:
 #        username: admin
 #        password: admin
 
-server:
-  port: 8082
+feign:
+  sentinel:
+    enabled: true
+
 
 management:
   endpoints:
